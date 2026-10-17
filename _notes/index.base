@@ -1,0 +1,13 @@
+views:
+  - type: map
+    name: View
+    order:
+      - file.name
+    mapHeight: 500
+    center: "[46.391390, 6.273161]"
+    defaultZoom: 9
+    maxZoom: 24
+    mapTiles: []
+    coordinates: note.coordinates
+    markerIcon: note.icon
+    markerColor: note.color
