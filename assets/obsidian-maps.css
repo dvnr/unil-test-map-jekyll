@@ -1,0 +1,4 @@
+.obsidian-map { width: 100%; margin: 1rem 0; border-radius: 8px; isolation: isolate; }
+.obsidian-map-pin { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 2px solid white; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: 0 1px 5px #0006; color: white; box-sizing: border-box; }
+.obsidian-map-pin svg { width: 18px; height: 18px; transform: rotate(45deg); }
+.obsidian-map-message { padding: 8px; background: white; color: #333; border-radius: 4px; }

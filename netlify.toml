@@ -1,3 +1,11 @@
 [build]
-  command = "jekyll build --trace"
+  # Jekyll runs _plugins/obsidian_maps.rb on every deploy, rebuilding markers
+  # from the checked-out Obsidian notes and embedded .base configuration.
+  command = "bundle exec jekyll build --trace"
   publish = "_site"
+
+[build.environment]
+  RUBY_VERSION = "3.2.1"
+  BUNDLER_VERSION = "2.4.6"
+  BUNDLE_FROZEN = "true"
+  JEKYLL_ENV = "production"

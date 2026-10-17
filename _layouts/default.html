@@ -2,6 +2,10 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    {% if content contains 'class="obsidian-map"' %}
+    <link rel="stylesheet" href="{{ '/assets/vendor/leaflet/leaflet.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/obsidian-maps.css' | relative_url }}">
+    {% endif %}
     <nav>{% include nav.html %}</nav>
     <div class="wrapper">
       <main>{{ content }}</main>
@@ -9,5 +13,10 @@
     </div>
 
     {% include link-previews.html wrapperQuerySelector="content" %}
+    {% if content contains 'class="obsidian-map"' %}
+    <script src="{{ '/assets/vendor/leaflet/leaflet.js' | relative_url }}"></script>
+    <script src="{{ '/assets/vendor/lucide/lucide.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/obsidian-maps.js' | relative_url }}"></script>
+    {% endif %}
   </body>
 </html>
